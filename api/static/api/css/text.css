@@ -1,0 +1,346 @@
+:root {
+    --backgroundColor: rgba(246, 241, 209);
+    --colorShadeA: rgb(0, 79, 152);
+    --colorShadeB: #6ca0dc;
+    --colorShadeC: rgb( 70, 130, 180);
+    --colorShadeD: rgb(161, 202, 241);
+    --colorShadeE: rgb(161, 202, 241);
+}
+
+
+
+body{
+    background-image: url(background.png);
+    background-size: 100%;
+}
+
+.x {
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 683px;
+    height: 441px;
+    top: 200px;
+    left: 600px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.shield-talk-1 {
+    height: 353px; left: 30px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 385px;
+}
+
+.video_image {
+    height: 700px; 
+    left: 200px;
+    object-fit: cover;
+    position: absolute;
+    top: 230px;
+    width: 1400px;
+}
+
+.column {   
+    opacity: 0.82;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+
+.container {
+    background-color: aqua;
+}
+
+
+.signbloom {
+    width: 492px;
+    color: rgb(0, 79, 152);
+    position: absolute;
+    top: 55px;
+    left: 714px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: center;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    position: absolute;
+    left: 784px;
+    top: 300px;
+  }
+  
+.file-upload label {
+    display: block;
+    top : 31px;
+    left: 29px;
+    background: #f00;
+    color: #fff;
+    text-align: center;
+    font-family: DM Sans;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: center;
+}
+  
+.file-upload label span {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.button_box{
+    position: absolute;
+    top: 450px;
+    left: 800px;
+}
+  
+button {
+    font-family: DM Sans;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(0, 79, 152);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+  
+button.big-button {
+    padding: 1em 2em;
+    border: 2px solid var(--colorShadeA);
+    border-radius: 1em;
+    background: var(--colorShadeE);
+    transform-style: preserve-3d;
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+  
+button.big-button::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--colorShadeC);
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+    transform: translate3d(0, 0.75em, -1em);
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+  
+button.big-button:hover {
+    background: var(--colorShadeD);
+    transform: translate(0, 0.375em);
+}
+  
+button.big-button:hover::before {
+    transform: translate3d(0, 0.75em, -1em);
+}
+  
+button.big-button:active {
+    transform: translate(0em, 0.75em);
+}
+  
+button.big-button:active::before {
+    transform: translate3d(0, 0, -1em);
+  
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+}
+  
+.Upload_video{
+    width: 361px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-family: DM Sans;
+    font-weight: Bold;
+    font-size: 35px;
+    opacity: 1;
+    text-align: center;
+}
+
+form p {
+    margin: 0 0 1em;
+    padding: 0;
+    position: absolute;
+}
+  
+form label {
+    width: 69px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 280px;
+    left: 700px;
+    font-family: DM Sans;
+    font-weight: Bold;
+    font-size: 30px;
+    opacity: 1;
+    text-align: center;
+}
+
+
+
+form input[type="file"] {
+    position: absolute;
+    top: 370px;
+    left: 820px;
+    
+}
+
+form input[type="text"] {
+    position: absolute;
+    top: 330px;
+    left: 700px;
+    
+}
+
+form input[type="text"] {
+    width: 438.78px;
+    height: 56.46px;
+    background-color: rgba(255,255,255,0.1);
+    opacity: 1;
+    position: absolute;
+    border: 2px solid var(--colorShadeA);
+    border-radius: 20px;
+    
+}
+
+  
+form input[type="file"]::file-selector-button {
+    background-image: linear-gradient(
+    to right,
+    var(--colorShadeA),
+    #002D62,
+    #319197 100%,
+    #319197 200%
+  );
+  background-position-x: 0%;
+  background-size: 300%;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  text-shadow: 0 1px 1px #333;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+input::file-selector-button:hover {
+    background-position-x: 100%;
+    transform: scale(1.1);
+}
+
+.username {
+    width: 69px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 283.89px;
+    left: 813px;
+    font-family: DM Sans;
+    font-weight: Bold;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+div[class*= box-3]{
+    height: 33.33%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    top: 50px;
+    left: 800px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+}
+
+a.btn-three {
+    color: #003366;
+    transition: all 0.5s;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(120, 134, 185, 0.2);
+    transition: all 0.3s;
+}
+
+.btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+  
+.btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid #465fb9;
+    transform: scale(1.2,1.2);
+}
+
+.btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+

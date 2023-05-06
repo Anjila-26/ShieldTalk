@@ -1,0 +1,38 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE-edge">
+        <title>HOME</title>
+        <meta name = "description" content = "">
+        <meta name = "viewport" content = "width = device-width , initial-scale = 1">
+        <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet" />
+        <link rel = "stylesheet" href = "{% static 'api/css/why.css'%}">
+    </head>
+    <body>
+
+        <div class="project">WHY THIS PROJECT?</div>
+        <video class="animation-1" autoplay="autoplay" controls="controls" preload="preload">
+            <source src ="{% static 'api/media/animation.mp4' %}"type="video/mp4"></video>
+        <img class="newspaper_1" src="{% static 'api/media/newspaper_1.png' %}" alt="page 1" />
+        <img class="newspaper_2" src="{% static 'api/media/newspaper_2.png' %}" alt="page 1" />
+        <img class="analysis_1" src="{% static 'api/media/analysis_1.png' %}" alt="page 1" />
+        <img class="analysis_2" src="{% static 'api/media/analysis_2.png' %}" alt="page 1" />         
+
+        <div class="box-3">
+            <a href = "#why" class="btn btn-three">NEXT PAGE</a>
+        </div>
+
+        <div class="box-4">
+            <a href = "/aboutus" class="btn_1 btn-four">PREVIOUS PAGE</a>
+        </div>
+        <div class="box-5">
+            <a href = "/shieldtalk" class="btn_2 btn-five">HOMEPAGE</a>
+        </div>
+
+        <script src = "" async defer></script>
+    </body>
+</html>
