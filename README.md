@@ -21,7 +21,7 @@ We have created a Deep Learning Model consisting of bidirectional lstm instead o
 
 We used Bidirectional LSTMs for toxicity classification because they capture the context and dependencies in text data, which can be difficult to model with other models.
 
-![image](https://user-images.githubusercontent.com/54539708/236645488-86196eeb-f8ee-43be-bfd5-c439787fd1bd.png)
+![image](https://www.google.com/imgres?imgurl=https%3A%2F%2Fproduction-media.paperswithcode.com%2Fmethods%2FScreen_Shot_2020-05-25_at_8.54.27_PM.png&tbnid=V_LJBiUrHBimxM&vet=12ahUKEwjsrNHFxeH-AhV623MBHbkcBt4QMygAegUIARDfAQ..i&imgrefurl=https%3A%2F%2Fpaperswithcode.com%2Fmethod%2Fbilstm&docid=gcIhIsURaJgMaM&w=1378&h=858&q=bilstm&ved=2ahUKEwjsrNHFxeH-AhV623MBHbkcBt4QMygAegUIARDfAQ)
 
 # Model Architechture
 1.  The first layer is a Bidirectional Long Short-Term Memory (LSTM) layer with 128 units and return_sequences=True. This layer is used to capture the context and long-term dependencies in the input data, which is important for text classification tasks. The Bidirectional wrapper allows the layer to process the input in both forward and backward directions, which improves the model's ability to capture the relationships between words.
@@ -31,7 +31,8 @@ We used Bidirectional LSTMs for toxicity classification because they capture the
 5.  The fifth layer is another Dropout layer with a rate of 0.1, which is used to further prevent overfitting.
 6.  The sixth and final layer is a Dense layer with 6 units and a Sigmoid activation function. This layer is used to output the probability of each class label, where the Sigmoid activation function ensures that the output probabilities are between 0 and 1. The binary_crossentropy loss function is used because this is a multi-label classification problem.
 
-![image](https://user-images.githubusercontent.com/54539708/236645497-45489922-3596-4e9a-94a4-d216667a895f.png)
+![image](https://media.discordapp.net/attachments/698887265018970122/1104505833036980244/P4eVLGXtCA5DhNyAAMgQIgAwBAiBDgADIfAEeWq8cJlE1uAAAAABJRU5ErkJggg.png?width=367&height=617)
+
 
 # Methodology
 1. Datai.e. Video and Text is uploaded to the website
