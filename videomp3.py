@@ -96,8 +96,37 @@ def barchart(prob_dict):
         os.remove(plot_path)
 
     plt.savefig(plot_path)
+    
 
+def barchart(prob_dict):
+    plt.clf()
+    # Sort the dictionary in descending order of values
+    sorted_prob_dict = {k: v for k, v in sorted(prob_dict.items(), key=lambda item: item[1], reverse=True)}
+    
+    # Create lists of labels and their corresponding probabilities
+    labels = list(sorted_prob_dict.keys())
+    probabilities = list(sorted_prob_dict.values())
+ 
+    # Set up the bar graph
+    plt.bar(labels, probabilities, color='brown')
+    
+    # Set the y-axis limits to 0 and 1
+    plt.ylim(0, 1)
+    
+    # Set the x- and y-axis labels
+    plt.xlabel('Label')
+    plt.ylabel('Probability')
+    
+    # Set the title of the plot
+    plt.title('Label Probabilities')
+    
+    # Show the plot
+    plot_path = './api/static/api/media/barchart.png'
 
+    if os.path.exists(plot_path):
+        os.remove(plot_path)
+
+    plt.savefig(plot_path)
 
 
 
