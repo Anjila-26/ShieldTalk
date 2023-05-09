@@ -1,20 +1,20 @@
 # ShieldTalk
 
 ```
-# ShieldTalk
+ShieldTalk
 
-# Introduction:
+Introduction:
 The issue of online harassment, cyberbullying, and toxicity has become increasingly prevalent in recent years. As more and more people rely on online platforms for communication and social interaction, it is important to create a safe and welcoming environment for all users.
 
-# Objective
+Objective
 Our objective in this hackathon is to:
 - The objective of making a toxic comment classification system is to automatically identify and flag inappropriate, offensive, or harmful comments in online platforms such as social media, discussion forums, and blogs
 
-# Dataset
+Dataset
 We used the **[Jigsaw Database](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)** from kaggle
 This dataset contains about 160,000 data entries in which there's column, id, sentence, and 6 labels i.e.(toxicity, severe_toxicity, obscene, threat, insult, identity attack)
 
-# Models
+Models
 You can find the trained model in the link [here](https://drive.google.com/drive/folders/1Nd2zWO9KqaTG5cOWdh7i04O6Jva1P3lI).
 # Model Description
 We have created a Deep Learning Model consisting of bidirectional lstm instead of normal lstm because in bidirectional, our input flows in two directions, making a bi-lstm different from the regular LSTM.
@@ -23,7 +23,7 @@ We used Bidirectional LSTMs for toxicity classification because they capture the
 
 ![image](https://www.google.com/imgres?imgurl=https%3A%2F%2Fproduction-media.paperswithcode.com%2Fmethods%2FScreen_Shot_2020-05-25_at_8.54.27_PM.png&tbnid=V_LJBiUrHBimxM&vet=12ahUKEwjsrNHFxeH-AhV623MBHbkcBt4QMygAegUIARDfAQ..i&imgrefurl=https%3A%2F%2Fpaperswithcode.com%2Fmethod%2Fbilstm&docid=gcIhIsURaJgMaM&w=1378&h=858&q=bilstm&ved=2ahUKEwjsrNHFxeH-AhV623MBHbkcBt4QMygAegUIARDfAQ)
 
-# Model Architechture
+Model Architechture
 1.  The first layer is a Bidirectional Long Short-Term Memory (LSTM) layer with 128 units and return_sequences=True. This layer is used to capture the context and long-term dependencies in the input data, which is important for text classification tasks. The Bidirectional wrapper allows the layer to process the input in both forward and backward directions, which improves the model's ability to capture the relationships between words.
 2.  The second layer is a GlobalMaxPooling1D layer, which extracts the maximum value from each feature map of the previous layer. This layer reduces the dimensionality of the output and provides a global view of the input sequence, which can help the model to identify the most important features.
 3.  The third layer is a Dropout layer with a rate of 0.1, which randomly drops out 10% of the input units during training. This layer is used to prevent overfitting, which can occur when the model learns to memorize the training data instead of generalizing to new data.
@@ -34,7 +34,7 @@ We used Bidirectional LSTMs for toxicity classification because they capture the
 ![image](https://media.discordapp.net/attachments/698887265018970122/1104505833036980244/P4eVLGXtCA5DhNyAAMgQIgAwBAiBDgADIfAEeWq8cJlE1uAAAAABJRU5ErkJggg.png?width=367&height=617)
 
 
-# Methodology
+Methodology
 1. Datai.e. Video and Text is uploaded to the website
 -  If an audio is passed
 i)  There's a function to get audio from the video
